@@ -1,0 +1,113 @@
+
+body {
+    text-align: center;
+    vertical-align: top;
+}
+
+.hidden {
+    display: none;
+}
+
+.mainContainer {
+    width: auto;
+    text-align: center;
+    display: inline-block;
+}
+
+.mainContainer #boardgame{
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.mainContainer .line {
+    clear: left;
+}
+
+.mainContainer .box {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #999;
+    float: left;
+}
+
+.mainContainer .box:hover {
+    border-width: 3px;
+}
+
+.mainContainer .box.checked {
+
+}
+nav {
+    text-align: center;
+}
+nav ul {
+    float: none !important;
+    display: inline-block;
+}
+
+.box.playerMove {
+    background-color: #332a24;
+    transition: background-color 0.5s linear 0.1s;
+}
+
+.box.botMove {
+    background-color: #805e61;
+}
+
+.labelBox {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #212121;
+    color: #999999;
+}
+.labelBox:hover {
+    cursor: pointer;
+}
+
+#config [type=range], #algorithm {
+    display: inline-block;
+    width: 250px;
+}
+.labelConfig {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+.configBtn {
+    font-weight: bold;
+}
+
+.msgBox {
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    color: #DDDDDD;
+}
+
+.aligned-player {
+    animation: alignedBoxAninationPlayer 1s infinite;
+}
+.aligned-bot {
+    animation: alignedBoxAninationBot 1s infinite;
+}
+
+
+@keyframes alignedBoxAninationBot {
+    0% { }
+    50% {
+        background-color : #eac2c2;
+    }
+}
+@keyframes alignedBoxAninationPlayer {
+    0% { }
+    50% {
+        background-color : #545454;
+    }
+}

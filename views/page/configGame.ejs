@@ -1,0 +1,37 @@
+<div id="config">
+    <div class="well">
+            <div>
+            <div class="labelConfig">Algorithme :</div>
+            <select id="algorithm">
+                <option value="Minimax" selected="selected">Minimax</option>
+                <option value="AlphaBeta">AlphaBeta</option>
+                <option value="Radius">Radius</option>
+            </select>
+        </div>
+        <div>
+            <div class="labelConfig">Profondeur de reflection</div>
+            <input name="deep" type="range" min="1" max="4" value="<%= defaultDeep %>">
+            <span id="viewDeep"></span>
+        </div>
+        <div class="sizes">
+            <div>
+                <div class="labelConfig">Colonnes</div>
+                <input name="nbCol" type="range" min="4" max="7"  value="<%= defaultNbCol %>">
+                <span id="viewNbCol"></span>
+            </div>
+            <div>
+                <div class="labelConfig">Lignes</div>
+                <input name="nbLine" type="range" min="4" max="7" value="<%= defaultNbLine %>">
+                <span id="viewNbLine"></span>
+            </div>
+            <div>
+                <div class="labelConfig">objectif</div>
+                <input name="nbBoxesForWin" type="range" min="3" max="5" value="<%= defaultNbBoxesForWin %>">
+                <span id="viewNbBoxesForWin"></span>
+            </div>
+        </div>
+        <button type="button" class="btn btn-secondary" id="reinit">Reinitialiser</button>
+        <button type="button" class="btn btn-secondary" id="start">Commencer</button>
+    </div>
+</div>
+

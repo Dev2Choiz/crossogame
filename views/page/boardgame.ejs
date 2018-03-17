@@ -1,0 +1,8 @@
+<% for (let y= 1; y <= nbLine; y++) { %>
+<div class="line">
+    <% for (let x = 1; x <= nbCol; x++) { %>
+        <div class="box unchecked" posx="<%= x %>" posy="<%= y %>"></div>
+    <% } %>
+</div>
+<% } %>
+

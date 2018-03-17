@@ -1,0 +1,20 @@
+{
+  "name": "crossogame",
+  "version": "0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: Aucun test\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "dev2choiz",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.17.2",
+    "body-parser": "^1.18.2",
+    "child_process": "^1.0.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "socket.io": "^2.0.4"
+  }
+}

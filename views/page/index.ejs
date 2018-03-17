@@ -1,0 +1,7 @@
+<% include header %>
+<div class="labelBox text-white bg-dark"></div>
+<div id="boardgame"></div>
+<%- include('configGame', {defaultNbLine: defaultNbLine, defaultNbCol: defaultNbCol, defaultDeep: defaultDeep, defaultNbBoxesForWin : defaultNbBoxesForWin}) %>
+<div class="msgBox text-white"></div>
+<%- include('info', {baseUrl: baseUrl}) %>
+<%- include('footer', {baseUrl: baseUrl}) %>
